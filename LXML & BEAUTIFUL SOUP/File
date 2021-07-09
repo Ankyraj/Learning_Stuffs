@@ -10,4 +10,33 @@ Ans:
     
 3. How to Parsing HTML using Parsel?
 Ans:
-    https://pypi.org/project/parsel/
+    from parsel import Selector
+    from bs4 import BeautifulSoup
+
+    print('=== HTML ===')
+    html = '''<li>
+     one
+     <div>
+    </li>
+    <li>
+     two
+    </li>'''
+    print(html)
+
+    print('=== parsel (lxml) (marginal interpretation) ===')
+    sel = Selector(text=html)
+    print(sel.extract())
+
+    print('=== html.parser ===')
+    soup = BeautifulSoup(html, 'html.parser')
+    print(soup.prettify())
+
+    print('=== lxml (same problem as parsel of course) ===')
+    soup = BeautifulSoup(html, 'lxml')
+    print(soup.prettify())
+
+    print('=== html5lib (Parses pages the same way a web browser does) ===')
+    soup = BeautifulSoup(html, 'html5lib')
+    print(soup.prettify())
+    
+    Refer:  https://pypi.org/project/parsel/
