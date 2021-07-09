@@ -40,3 +40,14 @@ Ans:
     print(soup.prettify())
     
     Refer:  https://pypi.org/project/parsel/
+    
+4. XPath
+   https://www.w3schools.com/xml/xpath_intro.asp
+   
+   - How to write unique XPaths?
+   Ans: https://www.youtube.com/watch?v=U-MZJ6rbqi4
+   
+   - Filtering results based on if an attribute or text contains a substring
+   Ans: https://stackoverflow.com/questions/44312924/filter-array-of-objects-whose-any-properties-contains-a-value
+   
+   - 
