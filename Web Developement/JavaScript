@@ -1,0 +1,19 @@
+JavaScript: https://www.w3schools.com/js/
+
+1. What is JS?
+  -- JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
+     Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
+  
+2. What is ajax requests and why it is used to load pages dynamically ( Just learn how it is being done, no need to go into details)
+  -- An AJAX request is a request made by an AJAX application. Typically, it is an HTTP request made by (browser-resident)
+     Javascript that uses XML to encode the request data and/or response data.
+     
+  -- https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp
+  
+  -- AJAX = Asynchronous JavaScript and XML. AJAX is a technique for creating fast and dynamic web pages. AJAX allows web pages to be updated
+     asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of 
+     a web page, without reloading the whole page.
+     
+  -- Dynamic Loading: 
+     Dynamic loading is a mechanism by which a computer program can, at run time, load a library (or other binary) into memory, retrieve the 
+     addresses of functions and variables contained in the library, execute those functions or access those variables, and unload the library from memory.
