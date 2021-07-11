@@ -1,0 +1,57 @@
+HTTP: https://www.tutorialspoint.com/http/http_overview.htm
+  A. Basics
+  -- The Hypertext Transfer Protocol (HTTP) is an application-level protocol for distributed, collaborative, hypermedia information systems.
+     This is the foundation for data communication for the World Wide Web (i.e. internet) since 1990. HTTP is a generic and stateless protocol
+     which can be used for other purposes as well using extensions of its request methods, error codes, and headers.
+  -- Basically, HTTP is a TCP/IP based communication protocol, that is used to deliver data (HTML files, image files, query results, etc.) on 
+     the World Wide Web. The default port is TCP 80, but other ports can be used as well. It provides a standardized way for computers to 
+     communicate with each other. HTTP specification specifies how clients' request data will be constructed and sent to the server, and how
+     the servers respond to these requests.
+     
+     
+  B. Requests
+  -- An HTTP request is made by a client, to a named host, which is located on a server. The aim of the request is to access a resource on the server.
+     To make the request, the client uses components of a URL (Uniform Resource Locator), which includes the information needed to access the resource.
+     
+  -- https://www.tutorialspoint.com/http/http_requests.htm
+
+
+  C. Responses
+  -- An HTTP response is made by a server to a client. The aim of the response is to provide the client with the resource it requested, or inform the 
+     client that the action it requested has been carried out; or else to inform the client that an error occurred in processing its request.
+     
+  -- https://www.tutorialspoint.com/http/http_responses.htm 
+  
+  
+  D. Methods
+  -- The primary or most-commonly-used HTTP methods are POST, GET, PUT, PATCH, and DELETE. These correspond to create, read, update, and delete (or CRUD)
+     operations, respectively.
+     
+  -- https://www.tutorialspoint.com/http/http_methods.htm
+  
+  
+  E. Status codes
+  -- The Status-Code element in a server response, is a 3-digit integer where the first digit of the Status-Code defines the class of response and the last
+     two digits do not have any categorization role.
+
+
+  F. Header Fields
+  -- HTTP header fields are components of the header section of request and response messages in the Hypertext Transfer Protocol (HTTP). They define the 
+     operating parameters of an HTTP transaction.
+  
+  -- https://www.tutorialspoint.com/http/http_header_fields.htm
+
+
+  G. Caching
+  -- Caching is a technique that stores a copy of a given resource and serves it back when requested. When a web cache has a requested resource in its store,
+     it intercepts the request and returns its copy instead of re-downloading from the originating server.
+     
+  -- https://www.tutorialspoint.com/http/http_caching.htm
+  
+  
+  H. URL Encoding
+  -- HTTP URLs can only be sent over the Internet using the ASCII character-set, which often contain characters outside the ASCII set. So these unsafe characters
+     must be replaced with a % followed by two hexadecimal digits.
+     
+  -- https://www.tutorialspoint.com/http/http_url_encoding.htm
+  
