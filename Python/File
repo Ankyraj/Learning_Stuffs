@@ -1,1 +1,88 @@
-111
+1. Variables, local variables, global variables
+  -- https://www.geeksforgeeks.org/python-variables/
+
+
+2. Datatypes, Typecasting
+  -- DataTypes:  https://www.geeksforgeeks.org/python-data-types/
+  -- TypeCasting: https://www.geeksforgeeks.org/type-casting-in-python-implicit-and-explicit-with-examples/
+
+
+3. Conditional Statements(If, If..Else, If..Elif..Else), Loops(For, While loops), Functions
+  -- Conditional Statements: https://www.geeksforgeeks.org/python-if-else/
+  -- Loops: https://www.geeksforgeeks.org/loops-in-python/
+  -- Functions: https://www.geeksforgeeks.org/functions-in-python/
+
+
+4. String operations(String concatenation, % formatting, str.format(), F-string, str.split(), str.lower(), etc.)
+  -- https://www.geeksforgeeks.org/python-strings/
+
+
+5. Lists, Sets, Dicts
+  -- List: https://www.geeksforgeeks.org/python-list/
+  -- Sets: https://www.geeksforgeeks.org/sets-in-python/
+  -- Dicts: https://www.geeksforgeeks.org/python-dictionary/
+
+
+6. List unpacking, Dict unpacking
+  -- https://www.geeksforgeeks.org/packing-and-unpacking-arguments-in-python/
+
+
+7. Class, Objects, Inheritance, Dunder or Magic methods in python
+  -- Class, Object: https://www.geeksforgeeks.org/python-classes-and-objects/
+  -- Inheritance: https://www.geeksforgeeks.org/inheritance-in-python/
+  -- Dunder or Magic method: https://www.geeksforgeeks.org/dunder-magic-methods-python/
+
+
+8. Modules(Importing modules, Writing custom modules, Importing modules using importlib package)
+  -- Modules: https://www.geeksforgeeks.org/python-modules/
+
+  -- Importing modules: https://www.geeksforgeeks.org/import-module-python/#:~:text=Import%20in%20python%20is%20similar,is%20not%20the%20only%20way.
+  -- Writing custom modules: https://www.w3schools.com/python/python_modules.asp
+  -- Importing modules using importlib package: https://www.tutorialspoint.com/the-implementation-of-import-in-python-importlib
+
+
+9. Packages in python
+  -- https://www.geeksforgeeks.org/create-access-python-package/
+  'or' https://www.tutorialspoint.com/packages-in-python
+
+
+10. Built-in functions, standard libraries, packages in python
+  -- Built-in Functions: https://www.w3schools.com/python/python_ref_functions.asp
+
+
+11. Familiarise with copy, csv, datetime, json, re packages
+  -- Copy: https://www.programiz.com/python-programming/shallow-deep-copy
+  -- CSV: https://www.geeksforgeeks.org/working-csv-files-python/
+  -- DateTime: https://www.w3schools.com/python/python_datetime.asp
+  'or'  https://www.geeksforgeeks.org/python-datetime-module-with-examples/
+  -- JSON: https://www.w3schools.com/python/python_json.asp
+  -- Regex: https://www.w3schools.com/python/python_regex.asp
+  'or'  https://www.geeksforgeeks.org/regular-expression-python-examples-set-1/
+
+
+12. Working with files
+ A. Reading and writing to files
+ -- https://www.geeksforgeeks.org/reading-writing-text-files-python/
+  
+ B. Reading and writing CSV files using csv package
+ -- https://www.geeksforgeeks.org/reading-and-writing-csv-files-in-python/#:~:text=Reading%20from%20CSV%20file&text=At%20first%2C%20the%20CSV%20file,in%20the%20specified%20CSV%20document.
+  
+ C. Reading and writing JSON files using json package
+ -- https://www.geeksforgeeks.org/reading-and-writing-json-to-a-file-in-python/#:~:text=Python%20supports%20JSON%20through%20a,to%20the%20dictionary%20in%20Python.
+ 
+ D. Using context managers to handle files in python
+ -- https://www.geeksforgeeks.org/context-manager-in-python/#:~:text=Managing%20Resources%20using%20context%20manager%20%3A&text=Generally%20in%20other%20languages%20when,The%20with%20keyword%20is%20used.
+ 
+ 
+13. Working with dates and time in python
+  A. Getting current time, Getting current time in local timezone
+  -- https://www.geeksforgeeks.org/get-current-time-in-different-timezone-using-python/
+  
+  B. Parsing string to datetime objects
+  -- https://www.geeksforgeeks.org/python-convert-string-to-datetime-and-vice-versa/
+  
+  C. Parsing datetime objects to desired formats
+  
+  
+  
+
