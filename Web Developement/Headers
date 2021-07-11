@@ -1,0 +1,19 @@
+1. What are headers?
+  -- https://www.geeksforgeeks.org/http-headers/
+  
+  -- HTTP headers let the client and the server pass additional information with an HTTP request or response. An HTTP header consists of
+     its case-insensitive name followed by a colon ( : ), then by its value.
+  
+  
+2. What is the purpose of User-Agent headers?
+  -- The User-Agent request header is a characteristic string that lets servers and network peers identify the application, 
+     operating system, vendor, and/or version of the requesting user agent.
+     
+  -- https://www.geeksforgeeks.org/http-headers-user-agent/
+  
+     
+3. What is the purpose of the referer header?
+  -- The Referer header allows servers to identify where people are visiting them from, which can then be used for analytics, logging,
+     optimized caching, and more. The Referer header may not contain URL fragments (i.e. "#section") or "username:password" information.
+     
+  -- https://www.geeksforgeeks.org/http-headers-referer/
