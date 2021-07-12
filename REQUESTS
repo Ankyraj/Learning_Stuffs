@@ -1,0 +1,5 @@
+1. Introduction to Python Requests module
+  -- Python requests module has several built-in methods to make Http requests to specified URI using GET, POST, PUT, PATCH or HEAD requests.
+     A Http request is meant to either retrieve data from a specified URI or to push data to a server. It works as a request-response protocol
+     between a client and a server.
+  -- https://www.geeksforgeeks.org/python-requests-tutorial/#:~:text=Python%20requests%20module%20has%20several,a%20client%20and%20a%20server.
