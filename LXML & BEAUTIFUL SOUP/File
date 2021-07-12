@@ -1,14 +1,16 @@
-1. How to parse HTML using LXML?
-Ans: 
-    https://www.bestproxyreviews.com/lxml/
-    
-2. How to parse HTML using BeatifulSoup?
-Ans: 
-    https://www.pluralsight.com/guides/extracting-data-html-beautifulsoup
-    or
-    https://www.twilio.com/blog/web-scraping-and-parsing-html-in-python-with-beautiful-soup
-    
-3. How to Parsing HTML using Parsel?
+1. How to parse HTML using LXML
+  -- https://www.bestproxyreviews.com/lxml/
+  
+
+2. How to parse HTML using BeatifulSoup
+  -- https://zetcode.com/python/beautifulsoup/
+  'or'
+     https://www.pluralsight.com/guides/extracting-data-html-beautifulsoup
+  'or'
+     https://www.twilio.com/blog/web-scraping-and-parsing-html-in-python-with-beautiful-soup
+     
+     
+3. Parsing HTML using Parsel
 Ans:
     from parsel import Selector
     from bs4 import BeautifulSoup
@@ -39,15 +41,38 @@ Ans:
     soup = BeautifulSoup(html, 'html5lib')
     print(soup.prettify())
     
-    Refer:  https://pypi.org/project/parsel/
-    
+  -- https://pypi.org/project/parsel/
+  
+
 4. XPath
-   https://www.w3schools.com/xml/xpath_intro.asp
-   
-   - How to write unique XPaths?
-   Ans: https://www.youtube.com/watch?v=U-MZJ6rbqi4
-   
-   - Filtering results based on if an attribute or text contains a substring
-   Ans: https://stackoverflow.com/questions/44312924/filter-array-of-objects-whose-any-properties-contains-a-value
-   
-   - 
+  -- https://www.w3schools.com/xml/xpath_intro.asp
+  
+  
+  A. XPath syntax
+  -- https://www.w3schools.com/xml/xpath_syntax.asp
+  
+  B. How to write unique XPaths
+  -- https://www.youtube.com/watch?v=U-MZJ6rbqi4
+  -- https://www.guru99.com/xpath-selenium.html
+  
+  C. How to extract text, attributes using xpaths
+  -- https://data-lessons.github.io/library-webscraping-DEPRECATED/xpath/
+  
+  D. How to use conditions in XPaths
+  -- The expression text() will return true for an element that contains text. You may also use XPath to create a test that will evaluate 
+     the result of an ACL or a JavaScript script. To add an XPath expression as a condition, select New XPath Test in the Condition dialog box,
+     and type the expression in the resulting field.
+  -- https://www.w3schools.com/xml/xpath_operators.asp   
+  
+  E. Filtering results based on if an attribute or text contains a substring
+  -- https://stackoverflow.com/questions/1198253/xpath-how-to-select-elements-based-on-their-value
+  
+  F. Relative XPaths
+  -- The relative xpath starts by referring to the element that we want to identify and not from the root node. A relative xpath starts with the // symbol.
+     It is mainly used for automation since even if an element is removed or added in the DOM, the relative xpath is not impacted.
+  
+  
+5. CSS Selectors
+  -- CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select
+     HTML elements according to its id, class, type, attribute etc.
+  -- https://www.w3schools.com/css/css_selectors.asp
