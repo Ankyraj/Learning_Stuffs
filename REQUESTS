@@ -20,4 +20,64 @@ HTTP Status_code: https://www.restapitutorial.com/httpstatuscodes.html
   -- https://www.geeksforgeeks.org/get-post-requests-using-python/
   
   
-4. 
+4. How to send post data in requests
+  -- POST request method used to send data mostly through 'form' to the server for creating/updating in the server. We can use 'post' a form data
+     to the route where the 'requests. post' and make a dictionary called 'pload' where it is sent as an argument to the post to 'data=pload'.
+  -- https://www.geeksforgeeks.org/post-method-python-requests/
+  -- https://www.datacamp.com/community/tutorials/making-http-requests-in-python
+  
+  
+5. How to pass get parameters in requests
+  -- When the GET request method is used, if a client uses the HTTP protocol on a web server to request a certain resource, the client sends the server
+     certain GET parameters through the requested URL. These parameters are pairs of names and their corresponding values, so-called name-value pairs.
+     
+     
+6. Passing headers into requests
+  -- HTTP headers let the client and the server pass additional information with an HTTP request or response. For example, setting the HTTP header "Cookie"
+     allows the requester to pass HTTP cookie information in the request.
+     
+  -- https://www.edureka.co/blog/python-requests-tutorial/#z6
+  -- https://www.kite.com/python/answers/how-to-add-headers-using-requests-in-python#:~:text=HTTP%20headers%20let%20the%20client,cookie%20information%20in%20the%20request.
+  
+  
+7. Passing cookies into requests
+  -- After receiving an HTTP request, a server can send one or more Set-Cookie headers with the response. The cookie is usually stored by the browser,
+     and then the cookie is sent with requests made to the same server inside a Cookie HTTP header.
+     
+  -- https://www.kite.com/python/answers/how-to-send-cookies-using-requests-in-python
+     
+     
+8. Passing proxies into requests
+  -- The proxies dict syntax is {"protocol":"ip:port", ...}. With it we can specify different (or the same) proxie(s) for requests using http, https,
+     and ftp protocols.
+     
+      http_proxy  = "http://10.10.1.10:3128"
+      https_proxy = "https://10.10.1.11:1080"
+      ftp_proxy   = "ftp://10.10.1.10:3128"
+      
+      proxyDict = {
+    "http": "http://user:pass@10.10.1.10:3128/"
+      }
+      'or'
+      proxyDict = { 
+                    "http"  : http_proxy, 
+                    "https" : https_proxy, 
+                    "ftp"   : ftp_proxy
+                  }
+
+      r = requests.get(url, headers=headers, proxies=proxyDict)
+      
+      --------------------------------------------------------------------------
+      Parameters:
+        method – method for the new Request object.
+        url – URL for the new Request object.
+        ...
+        proxies – (optional) Dictionary mapping protocol to the URL of the proxy.
+     
+  
+ 9. 
+  
+  
+     
+     
+  
