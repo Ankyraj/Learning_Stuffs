@@ -2,7 +2,10 @@
   -- Aiohttp is an HTTP client/server for asyncio. Basically, it allows us to write asynchronous clients and servers.
      The aiohttp package also supports Server WebSockets and Client WebSockets.
      
-  -- https://dzone.com/articles/an-intro-to-aiohttp#:~:text=Dev%20Zone%20%C2%B7%20Tutorial-,Python%203.5%20added%20some%20new%20syntax%20that%20allows%20developers%20to,write%20asynchronous%20clients%20and%20servers.
+  -- Aiohttp supports multiple types of streaming uploads, which allows us to send large files without reading them into memory.
+     
+  -- https://docs.aiohttp.org/en/stable/
+  
   
   A. Sending requests
     -- 
