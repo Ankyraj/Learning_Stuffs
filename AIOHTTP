@@ -16,9 +16,19 @@
     
     
   B. GET, POST requests
+    -- async with aiohttp.ClientSession() as session:
+        async with session.get('http://httpbin.org/get') as resp:
+        
+    -- session.post('http://httpbin.org/post', data=b'data')
+       
+        
   C. passing parameters, headers, cookies, proxies
+    -- https://docs.aiohttp.org/en/stable/client_quickstart.html#passing-parameters-in-urls
+    
+    
   D. getting response content
-
+    -- https://docs.aiohttp.org/en/stable/client_quickstart.html#response-content-and-status-code
+    
 
 2. Fetching a Web Page
   --  import aiohttp
