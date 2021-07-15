@@ -1,0 +1,7 @@
+1. Basics of AioHTTP requests
+
+  A. Sending requests
+    -- 
+  B. GET, POST requests
+  C. passing parameters, headers, cookies, proxies
+  D. getting response content
