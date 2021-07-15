@@ -17,13 +17,39 @@ ASYNCIO basics
        
        
   B. What is its difference and advantage from the synchronous counterpart.
-    -- 
+    -- When a synchronous method is invoked, it completes executing before returning to the caller. An asynchronous method starts a job in the
+       background and returns to the caller immediately.
+       
+    -- Synchronous:
+        In Synchronous Transmission, data is sent in form of blocks or frames. This transmission is the full duplex type. Between sender and
+        receiver the synchronization is compulsory. In Synchronous transmission, There is no gap present between data. It is more efficient 
+        and more reliable than asynchronous transmission to transfer the large amount of data.
+    
+    -- Asynchronous:
+        In Asynchronous Transmission, data is sent in form of byte or character. This transmission is the half duplex type transmission. 
+        In this transmission start bits and stop bits are added with data. It does not require synchronization.
+       
+    -- https://www.geeksforgeeks.org/difference-between-synchronous-and-asynchronous-transmission/
+    
+       
   C. Multiprocessing v/s AsyncIO
-    -- 
+    -- Multiprocessing refers to the ability of a system to support more than one processor at the same time. Applications in a multiprocessing
+       system are broken to smaller routines that run independently. The operating system allocates these threads to the processors improving 
+       performance of the system.
+    
+    
   D. async/await keywords
-    --
-  E. Running asyncio code
-    -- 
-  F. Event loop
+    -- The async keyword turns a method into an async method, which allows we to use the await keyword in its body. When the await keyword 
+       is applied, it suspends the calling method and yields control back to its caller until the awaited task is complete. 
+       await can only be used inside an async method.
+       
+    -- await can be put in front of any async promise-based function to pause our code on that line until the promise fulfills, then return
+       the resulting value. We can use await when calling any function that returns a Promise, including web API functions.
+ 
+  E. Event loop
     -- We can think of Event Loop as functions to run asynchronous tasks and callbacks, perform network IO operations, and run subprocesses. 
        To run an async function (coroutine) you have to call it using an Event Loop.
+       
+    -- Event loops run asynchronous tasks and callbacks, perform network IO operations, and run subprocesses.
+
+
