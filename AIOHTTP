@@ -3,12 +3,18 @@
      The aiohttp package also supports Server WebSockets and Client WebSockets.
      
   -- Aiohttp supports multiple types of streaming uploads, which allows us to send large files without reading them into memory.
+     Allowing us to reuse them instead of opening and closing a new one at each request.
      
   -- https://docs.aiohttp.org/en/stable/
   
   
   A. Sending requests
     -- 
+    async with aiohttp.ClientSession() as session:
+      async with session.get('http://python.org') as response:
+        print(await response.text())
+    
+    
   B. GET, POST requests
   C. passing parameters, headers, cookies, proxies
   D. getting response content
@@ -24,13 +30,13 @@
               async with session.get(url) as response:
                   return await response.text()
 
-      async def main(loop):
-          async with aiohttp.ClientSession(loop=loop) as session:
+      async def main():
+          async with aiohttp.ClientSession() as session:
               html = await fetch(session, 'http://www.blog.pythonlibrary.org')
               print(html)
 
       loop = asyncio.get_event_loop()
-      loop.run_until_complete(main(loop))
+      loop.run_until_complete(main())
       
       
  3. Downloading Files With aiohttp
