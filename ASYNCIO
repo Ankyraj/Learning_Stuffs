@@ -6,19 +6,21 @@ ASYNCIO basics
     -- Asynchronous input output is a form of input output processing that allows others devices to do processing before the transmission or data transfer is done.
        Asyncio the Python package that provides a foundation and API for running and managing coroutines.
        
-    -- Asynchronous programming is a type of programming in which we can execute more than one task without blocking the Main task (function). 
-       In Python, there are many ways to execute more than one function concurrently, one of the ways is by using asyncio. Async programming allows
-       you to write concurrent code that runs in a single thread.
+      -- Asynchronous programming is a type of programming in which we can execute more than one task without blocking the Main task (function). 
+         In Python, there are many ways to execute more than one function concurrently, one of the ways is by using asyncio. Async programming allows
+         you to write concurrent code that runs in a single thread.
 
-    -- Coroutine: Coroutines are a general control structure whereby flow control is cooperatively passed between two different routines without
-       returning. In asyncio Coroutine can be created by using async keyword before def.
+      -- Coroutine: Coroutines are a general control structure whereby flow control is cooperatively passed between two different routines without
+         returning. In asyncio Coroutine can be created by using async keyword before def.
        
     -- https://www.geeksforgeeks.org/how-to-run-two-async-functions-forever-python/
        
        
   B. What is its difference and advantage from the synchronous counterpart.
     -- 
-  Multiprocessing v/s AsyncIO
-  async/await keywords
-  Running asyncio code
-  Event loop
+  C. Multiprocessing v/s AsyncIO
+  D. async/await keywords
+  E. Running asyncio code
+  F. Event loop
+    -- We can think of Event Loop as functions to run asynchronous tasks and callbacks, perform network IO operations, and run subprocesses. 
+       To run an async function (coroutine) you have to call it using an Event Loop.
