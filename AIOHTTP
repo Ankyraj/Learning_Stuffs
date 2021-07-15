@@ -1,7 +1,109 @@
 1. Basics of AioHTTP requests
-
+  -- Aiohttp is an HTTP client/server for asyncio. Basically, it allows us to write asynchronous clients and servers.
+     The aiohttp package also supports Server WebSockets and Client WebSockets.
+     
+  -- https://dzone.com/articles/an-intro-to-aiohttp#:~:text=Dev%20Zone%20%C2%B7%20Tutorial-,Python%203.5%20added%20some%20new%20syntax%20that%20allows%20developers%20to,write%20asynchronous%20clients%20and%20servers.
+  
   A. Sending requests
     -- 
   B. GET, POST requests
   C. passing parameters, headers, cookies, proxies
   D. getting response content
+
+
+2. Fetching a Web Page
+  --  import aiohttp
+      import asyncio
+      import async_timeout
+
+      async def fetch(session, url):
+          with async_timeout.timeout(10):
+              async with session.get(url) as response:
+                  return await response.text()
+
+      async def main(loop):
+          async with aiohttp.ClientSession(loop=loop) as session:
+              html = await fetch(session, 'http://www.blog.pythonlibrary.org')
+              print(html)
+
+      loop = asyncio.get_event_loop()
+      loop.run_until_complete(main(loop))
+      
+      
+ 3. Downloading Files With aiohttp
+  --  import aiohttp
+      import asyncio
+      import async_timeout
+      import os
+
+
+      async def download_coroutine(session, url):
+          with async_timeout.timeout(10):
+              async with session.get(url) as response:
+                  filename = os.path.basename(url)
+                  with open(filename, 'wb') as f_handle:
+                      while True:
+                          chunk = await response.content.read(1024)
+                          if not chunk:
+                              break
+                          f_handle.write(chunk)
+                  return await response.release()
+
+
+      async def main(loop):
+          urls = ["http://www.irs.gov/pub/irs-pdf/f1040.pdf",
+              "http://www.irs.gov/pub/irs-pdf/f1040a.pdf",
+              "http://www.irs.gov/pub/irs-pdf/f1040ez.pdf",
+              "http://www.irs.gov/pub/irs-pdf/f1040es.pdf",
+              "http://www.irs.gov/pub/irs-pdf/f1040sb.pdf"]
+
+          async with aiohttp.ClientSession(loop=loop) as session:
+              for url in urls:
+                  await download_coroutine(session, url)
+
+
+      if __name__ == '__main__':
+          loop = asyncio.get_event_loop()
+          loop.run_until_complete(main(loop))
+          
+          
+ 4. Using aiofiles for Asynchronous Writing
+  --  import aiofiles
+      import aiohttp
+      import asyncio
+      import async_timeout
+      import os
+
+
+      async def download_coroutine(session, url):
+          with async_timeout.timeout(10):
+              async with session.get(url) as response:
+                  filename = os.path.basename(url)
+                  async with aiofiles.open(filename, 'wb') as fd:
+                      while True:
+                          chunk = await response.content.read(1024)
+                          if not chunk:
+                              break
+                          await fd.write(chunk)
+                  return await response.release()
+
+
+      async def main(loop):
+          urls = ["http://www.irs.gov/pub/irs-pdf/f1040.pdf",
+              "http://www.irs.gov/pub/irs-pdf/f1040a.pdf",
+              "http://www.irs.gov/pub/irs-pdf/f1040ez.pdf",
+              "http://www.irs.gov/pub/irs-pdf/f1040es.pdf",
+              "http://www.irs.gov/pub/irs-pdf/f1040sb.pdf"]
+
+          async with aiohttp.ClientSession(loop=loop) as session:
+              for url in urls:
+                  await download_coroutine(session, url)
+
+
+      if __name__ == '__main__':
+          loop = asyncio.get_event_loop()
+          loop.run_until_complete(main(loop))
+
+
+
+
