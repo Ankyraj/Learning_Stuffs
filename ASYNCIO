@@ -19,8 +19,11 @@ ASYNCIO basics
   B. What is its difference and advantage from the synchronous counterpart.
     -- 
   C. Multiprocessing v/s AsyncIO
+    -- 
   D. async/await keywords
+    --
   E. Running asyncio code
+    -- 
   F. Event loop
     -- We can think of Event Loop as functions to run asynchronous tasks and callbacks, perform network IO operations, and run subprocesses. 
        To run an async function (coroutine) you have to call it using an Event Loop.
