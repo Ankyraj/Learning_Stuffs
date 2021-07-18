@@ -1,7 +1,7 @@
 1. Basics of HTTPX
   -- httpx is a fast and multi-purpose HTTP toolkit allows to run multiple probers using retryablehttp library, it is designed to maintain the
      result reliability with increased threads.
-  -- HTTPX is a high performance asynchronous HTTP client, that builds on the well-established usability of requests , and gives you: A broadly
+  -- HTTPX is a high performance asynchronous HTTP client, that builds on the well-established usability of requests , and gives us: A broadly
      requests-compatible API. Standard synchronous interface, but with async support if you need it. HTTP/1.1 and HTTP/2 support.
      
   https://www.python-httpx.org/quickstart/#:~:text=Sending%20Form%20Encoded%20Data,-Some%20types%20of&text=data%20%3D%20%7B'key1'%3A,values%20from%20a%20given%20key.  
@@ -14,6 +14,7 @@
 3. HTTP2 Requests
   -- https://www.python-httpx.org/http2/
   -- HTTP/2 also provides support for functionality such as response prioritization, and server push.
+     http2 has to maintain HTTP paradigms. It is still a protocol where the client sends requests to the server over TCP.
   
   
 4. Sending GET, POST requests
