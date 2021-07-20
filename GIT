@@ -5,7 +5,11 @@ GIT: Git is the most commonly used version control system. Git tracks the change
      https://github.com/git-guides/
 
 1. Cloning a repository
+  -- git clone "Clone with HTTP"
+  
   -- https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
+  -- https://www.youtube.com/watch?v=O72FWNeO-xY
+  
   
 2. Creating a new branch
   -- https://www.git-tower.com/learn/git/faq/create-branch/
