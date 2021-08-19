@@ -1,0 +1,15 @@
+Task 2: Creating your first spider
+1. Create a python script to access the URL https://scrapeme.live/shop/ using requests module and collect the name, and product URL of each product in the listing page, and export data into a CSV file
+- Sol:
+- [Task2_1.ipynb](/uploads/b8c589252b692512c95e303ef0ed4224/Task2_1.ipynb)
+- [2_scrapeme_products_1.csv](/uploads/8486b5a72747641768c1f041e47f371c/2_scrapeme_products_1.csv)
+
+2. Write logic to go to the next pages ( Upto 5 pages) and repeat the above steps
+- Sol:
+- [Task2_2.ipynb](/uploads/d4629d498fcdf8915a6b2d9b577c1945/Task2_2.ipynb)
+- [2_scrapeme_products_2.csv](/uploads/8bae652db8386cfc98e5995197751eef/2_scrapeme_products_2.csv)
+
+3. Write a new python script to read the CSV file with the product URL that you have exported in the above step and extract product details from the product pages (You can use the XPaths you have collected earlier). Export the data into a new CSV file
+- Sol: 
+- [Task2_3.ipynb](/uploads/509ae268e8ad503a2325fcaca0819330/Task2_3.ipynb)
+- [2_scrapeme_products_3.csv](/uploads/744f721b816c3c9d8dab283a64d1bd8a/2_scrapeme_products_3.csv)
