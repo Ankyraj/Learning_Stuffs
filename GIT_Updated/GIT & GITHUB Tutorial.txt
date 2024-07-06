@@ -92,8 +92,25 @@ Git cmd line interface is preferred our GUI plugins that come with many IDEs. Th
 
 == Undoing/Reverting/Resetting code changes ==
 
-1. For Undo uncommited changes -> "git checkout -- <Provide file_name_where changes has been done>"
-2. For Undo commited changes -> "git revert"
-3. Resetting changes -> "git reset"
+1. For Undo uncommited changes -> 
+	"git checkout -- <Provide file_name_where changes has been done>"
+	"git checkout -- <File_name>"
+	(This will revlect to files that is present in the current directory)
+
+2. For Undo commited changes -> 
+	"git revert <commit_id>"
+	(using git log cmd we can find commit id)
+	"git revert -n <commit_id>"
+	(For explicitly changes)
+
+3. Resetting changes -> 
+	"git reset --hard <commit_id>"
+	(It will remove all revert changes in the code)
 
 
+
+== Branches (Create, Merge, Delete a branch) ==
+
+1. Creating new branch
+2. Merging a branch
+3. Deleting a branch
