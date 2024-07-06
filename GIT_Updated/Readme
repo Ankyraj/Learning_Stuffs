@@ -1,0 +1,35 @@
+GIT: Git is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of what has been done,
+     and you can revert to specific versions should you ever need to. Git also makes collaboration easier, allowing changes by multiple people 
+     to all be merged into one source.
+
+     https://github.com/git-guides/
+
+1. Cloning a repository
+  -- git clone "Clone with HTTP"
+  
+  -- https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
+  -- https://www.youtube.com/watch?v=O72FWNeO-xY
+  
+  
+2. Creating a new branch
+  -- https://www.git-tower.com/learn/git/faq/create-branch/
+
+3. Creating a new branch from existing branch
+  
+4. Commiting changes and adding commit messages
+  -- https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project
+  
+5. Pushing local changes to git
+  -- https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository
+  'or'
+     https://stackoverflow.com/questions/7690108/how-to-push-local-changes-to-a-remote-git-repository-on-bitbucket
+     
+6. Pulling updates from git
+  -- https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository
+  
+7. Switching branches
+  -- https://stackoverflow.com/questions/8650310/switch-to-another-branch-without-changing-the-workspace-files
+  
+8. Branch naming conventions
+  -- https://idiv-biodiversity.github.io/git-knowledge-base/branch-naming-conventions.html
+  
