@@ -75,7 +75,7 @@ Below are some cmds (in double quotes) will helps us:
 -> "git add <file_name>" (When we need a file in the directory.
 This will add file to staging area. Later on staging area will be used to commit files when we run "git commit" cmt)
 
--> "git commit -m '<Need to provide msg>' "
+-> "git commit -m "<Need to provide msg>" "
 (git commit cmd adds changes to local version control database. We have still not pushed these changes to remote server i.e. github)
 
 -> "git log" (It will show us logs of commit)
@@ -92,7 +92,8 @@ Git cmd line interface is preferred our GUI plugins that come with many IDEs. Th
 
 == Undoing/Reverting/Resetting code changes ==
 
-1. For Undo uncommited changes -> "git checkout --"
+1. For Undo uncommited changes -> "git checkout -- <Provide file_name_where changes has been done>"
 2. For Undo commited changes -> "git revert"
 3. Resetting changes -> "git reset"
+
 
