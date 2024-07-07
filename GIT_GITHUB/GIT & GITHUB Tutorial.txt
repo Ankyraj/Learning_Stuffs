@@ -135,6 +135,7 @@ NOTE:
 	-d (means delete branch)
 	q (with "q" we can easily exit from reading logs)
 	~ (called telda)
+	"rm -rf <folder_name>" (This will delete the folder from local)
 
 -> "git push --set-upstream origin <branch_name>" (this cmd will helpful while using push cmd to creating another branch)
 
