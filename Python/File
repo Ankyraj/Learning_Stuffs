@@ -1,6 +1,23 @@
 1. Variables, local variables, global variables
-  -- https://www.geeksforgeeks.org/python-variables/
+  -- For reference: https://www.geeksforgeeks.org/python-variables/
 
+  == Python Variables ==
+     -> Python Variable is containers that store values. 
+     -> We do not need to declare variables before using them or declare their type. 
+     -> A variable is created at the moment we first assign a value to it.
+
+  == Rules for Python variables ==
+     -> A Python variable name must start with a letter or the underscore character.
+     -> A Python variable name cannot start with a number.
+     -> A Python variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+     -> Variable in Python names are case-sensitive (name, Name, and NAME are three different variables).
+     -> The reserved words(keywords) in Python cannot be used to name the variable in Python.
+
+  == Global and Local Python Variables ==
+     -> Local variables in Python are the ones that are defined and declared inside a function. We can not call this variable outside the function.
+     -> Global variables in Python are the ones that are defined and declared outside a function, and we need to use them inside a function.
+
+  
 
 2. Datatypes, Typecasting
   -- DataTypes:  https://www.geeksforgeeks.org/python-data-types/
