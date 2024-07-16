@@ -14,8 +14,10 @@
      -> The reserved words(keywords) in Python cannot be used to name the variable in Python.
 
   == Global and Local Python Variables ==
-     -> Local variables in Python are the ones that are defined and declared inside a function. We can not call this variable outside the function.
-     -> Global variables in Python are the ones that are defined and declared outside a function, and we need to use them inside a function.
+     -> Local variables in Python are the ones that are defined and declared inside a function. 
+        We can not call this variable outside the function.
+     -> Global variables in Python are the ones that are defined and declared outside a function, 
+        and we need to use them inside a function.
 
   
 
